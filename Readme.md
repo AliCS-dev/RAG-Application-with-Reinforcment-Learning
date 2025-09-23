@@ -15,7 +15,9 @@ This project was developed at **Aalto University Summer School 2025** by:
 
 - `ali_cs_dev`
 - `muham`
-- Team contributors (add others here)
+- Tunc Saracoglu
+- Arjun
+- Bharat 
 
 ---
 
@@ -232,3 +234,4 @@ Natural Language Processing (NLP)
 Ideal for learning how retrieval-based QA systems can be improved with user feedback.
 
 ```
+
