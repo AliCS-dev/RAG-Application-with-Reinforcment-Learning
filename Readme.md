@@ -205,33 +205,9 @@ How many chunks do you want for each answer? : 3
 
  Action: 2 |  Reward: 1 |  Epsilon: 0.99
 --------------------------------------------------
- Tips
-Run in a virtual environment to avoid dependency issues.
 
-Train the agent with multiple questions to improve learning.
-
-Save your Q-table regularly.
-
- Future Enhancements
-Replace terminal input with a GUI (e.g. Streamlit or Gradio)
-
-Add support for multiple file tracking in Q-table
-
-Introduce confidence scoring using LLMs
-
-Expand action space with answer re-ranking
-
- Academic Note
-This project is an academic experiment blending:
-
-Information Retrieval (IR)
-
-Reinforcement Learning (RL)
-
-Natural Language Processing (NLP)
-
-Ideal for learning how retrieval-based QA systems can be improved with user feedback.
 
 ```
+
 
 
