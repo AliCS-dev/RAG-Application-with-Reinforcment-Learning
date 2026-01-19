@@ -1,15 +1,15 @@
-# 📄 RAG Application with Reinforcement Learning Agent
+#  RAG Application with Reinforcement Learning Agent
 
 ---
 
-## 🧠 Project Title
+##  Project Title
 
 **RAG-Based Document QA with Reinforcement Learning (RL)**  
 A Retrieval-Augmented Generation (RAG) system powered by FAISS, LangChain, and a custom Q-learning agent for feedback-driven learning. Designed for querying uploaded documents interactively and improving answer selection using reinforcement learning.
 
 ---
 
-## 👥 Team
+## Team
 
 This project was developed at **Aalto University Summer School 2025** by:
 
@@ -21,7 +21,7 @@ This project was developed at **Aalto University Summer School 2025** by:
 
 ---
 
-## 📦 Dependencies
+##  Dependencies
 
 Install all required Python packages:
 
@@ -42,7 +42,7 @@ User feedback collection via terminal
 
 Sentence transformers for semantic similarity
 
-📁 File Structure
+File Structure
 bash
 Copy
 Edit
@@ -52,7 +52,7 @@ RAG_Application/
 ├── q_table.json         # Q-learning saved state (after training)
 ├── myvectorstore/       # FAISS vectorstore (auto-generated)
 ├── README.md            # You're here
-🏗️ Workflow Overview
+ Workflow Overview
 File Upload (via file dialog)
 
 Document Loading & Chunking
@@ -67,7 +67,7 @@ User Feedback Collection (reward system)
 
 Q-table Update & Saving
 
-🔍 Detailed Component Breakdown
+ Detailed Component Breakdown
 1. File Upload (Local)
 Uses tkinter to allow local file selection:
 
@@ -176,44 +176,43 @@ maybe	0
 
 Used to adjust Q-values for specific (question, chunk) pairs.
 
-💾 Persistence
+ Persistence
 FAISS index is saved as myvectorstore/
 
 Q-table is saved as q_table.json
 
 These files allow the agent to resume learning or re-use stored knowledge.
-
-🧪 Example Usage (Terminal)
+Example Usage (Terminal)
 pgsql
 Copy
 Edit
 $ python App.py
 
-📁 Please select your file(s)
-⏳ Loading: your_file.pdf
-✅ Total pages loaded: 10
-✅ Total chunks created: 25
+Please select your file(s)
+ Loading: your_file.pdf
+ Total pages loaded: 10
+ Total chunks created: 25
 
 Ask your question (type 'exit' to finish): what is quantum computing?
 Ask your question (type 'exit' to finish): exit
 
 How many chunks do you want for each answer? : 3
 
-🧠 Question: what is quantum computing?
-📚 Answer: (top FAISS result content)
+ Question: what is quantum computing?
+ Answer: (top FAISS result content)
 
-🤖 Was this answer good? (yes / no / maybe): yes
+ Was this answer good? (yes / no / maybe): yes
 
-🎯 Action: 2 | ✅ Reward: 1 | 📉 Epsilon: 0.99
+ Action: 2 |  Reward: 1 |  Epsilon: 0.99
 --------------------------------------------------
-💡 Tips
+ Tips
 Run in a virtual environment to avoid dependency issues.
 
 Train the agent with multiple questions to improve learning.
 
 Save your Q-table regularly.
 
-🛠️ Future Enhancements
+ Future Enhancements
 Replace terminal input with a GUI (e.g. Streamlit or Gradio)
 
 Add support for multiple file tracking in Q-table
@@ -222,7 +221,7 @@ Introduce confidence scoring using LLMs
 
 Expand action space with answer re-ranking
 
-🧠 Academic Note
+ Academic Note
 This project is an academic experiment blending:
 
 Information Retrieval (IR)
@@ -234,4 +233,5 @@ Natural Language Processing (NLP)
 Ideal for learning how retrieval-based QA systems can be improved with user feedback.
 
 ```
+
 
